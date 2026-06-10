@@ -352,15 +352,16 @@ copy_config_files() {
 }
 
 verify_installed_version() {
-    local version_text
+    local version_text expected_version
     if [[ ! -x "$INSTALL_DIR/XrayR" ]]; then
         log_error "安装失败：$INSTALL_DIR/XrayR 不存在或不可执行。"
         exit 1
     fi
+    expected_version="${DEFAULT_VERSION#v}"
     version_text="$("$INSTALL_DIR/XrayR" -version 2>&1 | head -n1)"
     echo "$version_text"
-    if [[ "$version_text" != *"XrayR 0.9.4"* ]]; then
-        log_error "版本验证失败：期望输出包含 XrayR 0.9.4。"
+    if [[ "$version_text" != *"XrayR ${expected_version}"* ]]; then
+        log_error "版本验证失败：期望输出包含 XrayR ${expected_version}。"
         exit 1
     fi
 }

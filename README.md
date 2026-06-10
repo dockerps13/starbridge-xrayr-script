@@ -114,5 +114,5 @@ XrayR version
 期望输出：
 
 ```text
-XrayR 0.9.4
+XrayR 0.9.5
 ```

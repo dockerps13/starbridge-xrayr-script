@@ -10,8 +10,8 @@ plain='\033[0m'
 OWNER="dockerps13"
 REPO="starbridge-xrayr"
 SCRIPT_REPO="starbridge-xrayr-script"
-DEFAULT_VERSION="v0.9.4"
-DEFAULT_COMMIT="0e810e0"
+DEFAULT_VERSION="v0.9.5"
+DEFAULT_COMMIT="e85c6e6"
 INSTALL_DIR="/usr/local/XrayR"
 CONFIG_DIR="/etc/XrayR"
 SERVICE_FILE="/etc/systemd/system/XrayR.service"
@@ -96,17 +96,17 @@ detect_arch() {
 sha256_for_asset() {
     local asset="$1"
     case "$asset" in
-        XrayR-linux-64.zip) echo "5403225a5e4f7b6d279c1fb43d0e0e9468dea5c57c52ab7cff81571aca43c11e" ;;
-        XrayR-linux-arm64-v8a.zip) echo "3de3cf292dd676b1cf00976be5f3456cc96639f8e68cc75a2ecad59ec270ff89" ;;
-        XrayR-linux-arm32-v7a.zip) echo "5ad15a54bec567ffda84fc0999560748d5ce3bf51a27d53e85bc66a5cd370b74" ;;
-        XrayR-linux-arm32-v6.zip) echo "c9ae961d846cd2761eb33d52b6f1a9cccc230fc7aae8dd4a19a50c16614d01f3" ;;
-        XrayR-linux-32.zip) echo "59b29a6f2e767f129dce8176a5decaff763dfc9c15d897be59c5cda929f48fbc" ;;
-        XrayR-linux-mips-softfloat.zip) echo "68d43f8d50e6d3eeac98818481bb66e1875e5e8b6c466e9408787823d2463aa9" ;;
-        XrayR-linux-mipsle-softfloat.zip) echo "bfbea676245ab91007abc7ba4a6ea5176dff6bcd09d6ae99f52ff28cf918468c" ;;
-        XrayR-linux-mips64.zip) echo "50f270ab3942cb66254af23a8e01186b6eb2f7773e00467122b6399716d09948" ;;
-        XrayR-linux-mips64le.zip) echo "011b6f4196f346e3437edf811dbec2744d40aedfb5ab81cdb4940249ce35e8ac" ;;
-        XrayR-linux-s390x.zip) echo "0d7a299320f4eeee649805137051ce58392f07266830f4f9d8d1f160fa7bac17" ;;
-        XrayR-linux-ppc64le.zip) echo "e2371f23db0fd09511330fa2c411fad658c7ce8a86b621d44be3e053ce42dc74" ;;
+        XrayR-linux-64.zip) echo "00abc31d798d2fb16cf6ed9e8d5d2f94a6ad7772455090d9791c6e84c138a826" ;;
+        XrayR-linux-arm64-v8a.zip) echo "7437c687e8fa2b04b3d0dd9d950fc0a9510a66e9f6bd25516d8b9aaa9aad5724" ;;
+        XrayR-linux-arm32-v7a.zip) echo "e1bc48f9eb77ead9bdb563cbf0ad683205385890c0ab153f3b35b92562788e6a" ;;
+        XrayR-linux-arm32-v6.zip) echo "86707a0d86f7d2cdec68776e42d0734b2b52be4f913d567d48ca17f9255c8d28" ;;
+        XrayR-linux-32.zip) echo "c9e3f861d8fb380f75c8e43d23c480938179e294e2ed5cccfed9600e9a2a9526" ;;
+        XrayR-linux-mips-softfloat.zip) echo "db575cbd748eb7903f98a18aa140a851a4bd5bdb4a0b55e71f554a1b9d13d90e" ;;
+        XrayR-linux-mipsle-softfloat.zip) echo "e8d13734061ff8a8532ed2641985b9b1e4cd311a0ab8bd7b412ad0d961013a50" ;;
+        XrayR-linux-mips64.zip) echo "dcfdc1d1580232b3a727466a66c8ac01e56791a8fe198ba78eb587037a042769" ;;
+        XrayR-linux-mips64le.zip) echo "fb2fa076f688dd8f769446dcc301be69617745e50fd2f628806212fb3a50a0b0" ;;
+        XrayR-linux-s390x.zip) echo "0ab4a1059783f766c826e3b97f40fbf0b7ff802fbd497a84f4bbb60b6af1d6b8" ;;
+        XrayR-linux-ppc64le.zip) echo "6e35513a35e911de77ec2d999c4350eafa991a4eb01320f486c630c2921396f2" ;;
         *)
             log_error "未配置 ${asset} 的 sha256，停止安装。"
             exit 1

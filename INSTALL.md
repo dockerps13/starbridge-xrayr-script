@@ -9,7 +9,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/dockerps13/starbridge-xrayr-sc
 默认下载来源：
 
 ```text
-https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.4/XrayR-linux-64.zip
+https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.5/XrayR-linux-64.zip
 ```
 
 安装脚本会按 CPU 架构自动选择对应的 `XrayR-*.zip` 包，并校验 sha256。
@@ -17,7 +17,7 @@ https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.4/XrayR-li
 linux-amd64 sha256：
 
 ```text
-5403225a5e4f7b6d279c1fb43d0e0e9468dea5c57c52ab7cff81571aca43c11e
+00abc31d798d2fb16cf6ed9e8d5d2f94a6ad7772455090d9791c6e84c138a826
 ```
 
 说明：

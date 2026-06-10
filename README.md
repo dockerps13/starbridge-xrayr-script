@@ -13,19 +13,19 @@ bash <(curl -Ls https://raw.githubusercontent.com/dockerps13/starbridge-xrayr-sc
 默认安装版本：
 
 ```text
-XrayR v0.9.4
+XrayR v0.9.5
 ```
 
 默认安装来源：
 
 ```text
-https://github.com/dockerps13/starbridge-xrayr/releases/tag/v0.9.4
+https://github.com/dockerps13/starbridge-xrayr/releases/tag/v0.9.5
 ```
 
 默认下载包：
 
 ```text
-https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.4/XrayR-linux-64.zip
+https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.5/XrayR-linux-64.zip
 ```
 
 安装脚本会按 CPU 架构自动选择对应的 `XrayR-*.zip` 包，并校验 sha256。
@@ -33,7 +33,7 @@ https://github.com/dockerps13/starbridge-xrayr/releases/download/v0.9.4/XrayR-li
 linux-amd64 sha256：
 
 ```text
-5403225a5e4f7b6d279c1fb43d0e0e9468dea5c57c52ab7cff81571aca43c11e
+00abc31d798d2fb16cf6ed9e8d5d2f94a6ad7772455090d9791c6e84c138a826
 ```
 
 安装目录：
@@ -103,7 +103,7 @@ XrayR version
 | s390x | XrayR-linux-s390x.zip |
 | ppc64le | XrayR-linux-ppc64le.zip |
 
-新仓库 release 里也保留了 `starbridge-xrayr-linux-amd64-v0.9.4-0e810e0.tar.gz`，用于手动下载；一键安装脚本默认使用兼容旧习惯的 `XrayR-*.zip` 包名。
+新仓库 release 里也保留了 `starbridge-xrayr-linux-amd64-v0.9.5-e85c6e6.tar.gz`，用于手动下载；一键安装脚本默认使用兼容旧习惯的 `XrayR-*.zip` 包名。
 
 安装完成后可以验证：
 

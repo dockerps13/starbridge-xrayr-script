@@ -1,0 +1,14 @@
+.env
+.env.*
+*.log
+*.bak
+*.backup
+*.tar.gz
+*.zip
+*.out
+*.test
+dist/
+build/
+release/
+.idea/
+.vscode/
